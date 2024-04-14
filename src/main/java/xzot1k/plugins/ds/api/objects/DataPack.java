@@ -30,10 +30,9 @@ public interface DataPack {
      *
      * @param shop     The shop to check for.
      * @param isBuy    Whether the transaction was buy or sell.
-     * @param isGlobal Whether the limited needs to be global or player specific.
      * @return The current counter for the shop.
      */
-    long getCurrentTransactionCounter(Shop shop, boolean isBuy, boolean isGlobal);
+    long getCurrentTransactionCounter(Shop shop, boolean isBuy);
 
     /**
      * Checks if the transaction limit was reached.
@@ -44,6 +43,17 @@ public interface DataPack {
      * @return Whether the limit was met.
      */
     boolean hasMetTransactionLimit(Shop shop, boolean isBuy, boolean isGlobal);
+
+    /**
+     * Gets the excess amount of units before the limit is met.
+     *
+     * @param shop     The shop to check against.
+     * @param isBuy    Whether the transaction was buy or sell.
+     * @param isGlobal Whether the limited needs to be global or player specific.
+     * @param amount   the unit count requested
+     * @return The excess amount of units available before limit is met
+     */
+    long getTransactionLimitExcess(Shop shop, boolean isBuy, boolean isGlobal, long amount);
 
     /**
      * Updates the cooldown id for the player.
