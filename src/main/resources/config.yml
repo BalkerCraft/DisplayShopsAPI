@@ -380,6 +380,9 @@ blocked-material-list: [ "LAVA", "STATIONARY_LAVA" ]
 # Format: <material:durability> (Don't put a durability if it doesn't matter)
 blocked-item-list: [ "END_PORTAL", "PORTAL" ]
 
+# All ids defined in this list will be checked on an item's NBT before an interaction with a shop's base block takes place.
+blocked-nbt-list: [ "UnopenedEnchantBook", "EnchantGroup" ]
+
 # This is the list where specific materials can be given direct limitation to the maximum buy and sell price (max per one of that material in a stack "outside unit count").
 max-material-prices:
   DIAMOND_SWORD:

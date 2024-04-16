@@ -379,6 +379,12 @@ public interface Manager {
     boolean removeItem(@NotNull Inventory inventory, @NotNull ItemStack itemStack, int amount);
 
     /**
+     * @param itemStack itemstack to check NBT on
+     * @return Whether the itemstack contains blocked NBT data
+     */
+    boolean hasBlockedNBT(@NotNull ItemStack itemStack);
+
+    /**
      * Get amount of similar items.
      *
      * @param inventory The inventory to check.
