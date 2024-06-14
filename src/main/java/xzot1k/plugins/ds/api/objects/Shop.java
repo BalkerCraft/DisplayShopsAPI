@@ -62,6 +62,13 @@ public interface Shop {
     void dropStock();
 
     /**
+     * Updates the direction to where the player is looking (for the shop item placement)
+     *
+     * @param player The player to grab info from
+     */
+    void updateBaseBlockDirection(@NotNull Player player);
+
+    /**
      * Gets the name of the shop's trade currency item (if NULL or "force-use" is enabled in the config.yml, the name of the default currency item will be used).
      *
      * @return The shop's currency itemstack name.

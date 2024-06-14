@@ -182,6 +182,7 @@ appearance-all-admin: "&aAll appearances are now {status} &afor &e{player}&a."
 invalid-appearance: "&cThe entered appearance is invalid. &eAvailable Appearances: &b{appearances}"
 empty-shop: "&cThis shop is currently empty."
 kill-command: "&aFound &e{count} &aof the correct entities and &e{removed} &awere/was removed."
+market-region-rcost: "&aThe cost of the &e{id} &amarket region was set to &e{cost}&a."
 
 ## Hook Messages ##
 towny-no-access: "&cYou do not have access to this shop plot."
