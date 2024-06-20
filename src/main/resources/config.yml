@@ -265,28 +265,34 @@ chat-interaction-cancel: "cancel"
 help-command-link: "wiki"
 
 # These are offsets and rotation values to help position certain items correctly (Oraxen and ItemsAdder Ids are supported)
-# Format: <material/Id>:<x>,<y>,<z>,<yaw>,<pitch>
+# Format: <material/Id>:<x>,<y>,<z>,<scale>
 item-display-offsets:
-  - "SHIELD:-0.25,0.6,0.2,180,0"
-  - "BARRIER:-0.25,0,0,0,0"
-  - "CHAIN:0,-0.4,0,0,0"
-  - "BED:0,-0.2,0,0,0"
-  - "HEAD:0,-0.05,0,0,0"
-  - "BANNER:0,-0.5,0,0,0"
+  - "SHIELD:-0.2,0.18,0.2,-0.1"
+  - "BARRIER:0,0,0,0"
+  - "CHAIN:0,-0.4,0,0"
+  - "BED:0,-0.2,0,0"
+  - "HEAD:0,0,0,0"
+  - "BANNER:0,-0.18,0,-0.16"
+  - "TRAPDOOR:0,0.3,0,0"
+  - "FENCE_GATE:0,-0.1,0,0"
 
 # If this is enabled, the glass display will be ignored.
 hide-glass: false
+
+# This is the scale of the glass above a shop.
+display-glass-scale: 0.7
 
 # This allows items to spin on the base-block.
 # (Note: This automatically adjusts item offsets, not blocks)
 allow-item-spinning: true
 
-# This blocks specific item types from spinning due to custom model oddities
-deny-item-spinning: [ "SHIELD:0" ]
+# This is the background color of the text above a shop
+# Format: <alpha(0-100),red(0-255),green(0-255),blue(0-255)>
+display-line-color: "60,0,0,0"
 
 # This is how quickly (in ticks, 20 ticks = 1 second) a display will update when looked at by a player.
 # (Note: The higher the value, the more efficient; however, it will not look as good)
-view-tick: 1
+view-tick: 4
 
 # The player must at least this close to the base block before looking at the shop will display.
 # (Note: The lower the value, the more efficient; however, this will require the player be closer to the base block)
