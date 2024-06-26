@@ -52,7 +52,7 @@ appearances:
   Traditional:
     material: "CHEST"
     price: 75.0
-    offset: "0,0,0"
+    offset: "0,-0.1,0"
   Security:
     material: "LOCKED_CHEST"
     price: 125.0
