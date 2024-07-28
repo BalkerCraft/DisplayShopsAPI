@@ -290,14 +290,6 @@ allow-item-spinning: true
 # Format: <alpha(0-100),red(0-255),green(0-255),blue(0-255)>
 display-line-color: "60,0,0,0"
 
-# This is how quickly (in ticks, 20 ticks = 1 second) a display will update when looked at by a player.
-# (Note: The higher the value, the more efficient; however, it will not look as good)
-view-tick: 4
-
-# The player must at least this close to the base block before looking at the shop will display.
-# (Note: The lower the value, the more efficient; however, this will require the player be closer to the base block)
-view-distance: 10
-
 # If this option is enabled, shop displays will remain visible at all times while the player is in range.
 # (NOTE: This feature has a distance calculation based on chunks)
 always-display: false
