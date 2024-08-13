@@ -479,6 +479,10 @@ immersion-section:
   shop-bbm-sound: "ENTITY_SNOWBALL_THROW"
   shop-bbm-particle: "FLAME"
 
+
+#Changes the behaviour of whether to use ItemDisplays (1.19.4+ and server jar from Paper) or Packet-Based Armor stands which are more friendly to server performance
+use-item-displays-if-available: false
+
 # Here is where the shop creation item can be fully configured.
 # (Note: The material is the 'shop-block-material' defined under the 'shop-options' section)
 shop-creation-item:

@@ -159,14 +159,14 @@ public interface DisplayShopsAPI {
     /**
      * @return Server version in the format XXX.X where the decimal digit is the 'R' version.
      */
-    double getServerVersion();
+/*    double getServerVersion();*/
 
     /**
      * Checks if paper spigot methods exist.
      *
      * @return Whether paper spigot is detected.
      */
-    boolean isPaperSpigot();
+    /*boolean isPaperSpigot();*/
 
     /**
      * This gets the logging file.

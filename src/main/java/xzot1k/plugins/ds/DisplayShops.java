@@ -124,16 +124,6 @@ public class DisplayShops extends JavaPlugin implements DisplayShopsAPI {
     }
 
     @Override
-    public double getServerVersion() {
-        return 0;
-    }
-
-    @Override
-    public boolean isPaperSpigot() {
-        return false;
-    }
-
-    @Override
     public boolean isPrismaInstalled() {
         return false;
     }
