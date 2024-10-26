@@ -293,6 +293,7 @@ display-line-color: "60,0,0,0"
 # If this option is enabled, shop displays will remain visible at all times while the player is in range.
 # (NOTE: This feature has a distance calculation based on chunks)
 always-display: false
+always-display-radius: 15
 
 # If enabled, when the shop's hologram line contains a sell/buy price that is disabled the line will be hidden.
 price-disabled-hide: true
