@@ -75,6 +75,10 @@ public interface Shop {
      */
     String getTradeItemName();
 
+    void setClaimable(boolean value);
+
+    boolean isClaimable();
+
     /**
      * Saves the shop to the database.
      *

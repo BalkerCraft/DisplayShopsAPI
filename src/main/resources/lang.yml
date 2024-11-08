@@ -183,6 +183,12 @@ invalid-appearance: "&cThe entered appearance is invalid. &eAvailable Appearance
 empty-shop: "&cThis shop is currently empty."
 kill-command: "&aFound &e{count} &aof the correct entities and &e{removed} &awere/was removed."
 market-region-rcost: "&aThe cost of the &e{id} &amarket region was set to &e{cost}&a."
+inv-full: "&cYou have full inventory, remove items to continue"
+claim_menu-withdraw-item: "&cYou've successfully withdrawn &a%amount%x &e%item%"
+claim_currency-error: "&cAn error occurred, currency type is null"
+claim_hook-error: "&cAn error occurred, currency hook is null"
+claim_menu-withdraw-balance: "&cYou've successfully withdrawn &a%amount%"
+claim_menu-withdraw-item-balance: "&cYou've successfully withdrawn &a%amount% &e%item%"
 
 ## Hook Messages ##
 towny-no-access: "&cYou do not have access to this shop plot."

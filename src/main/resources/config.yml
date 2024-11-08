@@ -24,6 +24,12 @@ run-gc-immediately: true
 # this amount of time (in seconds) will be deleted.
 clean-inactive-duration: -1
 
+# When this is set to true, and the `clean-inactive-duration` is not set on '-1', when shop's owner has not been online for `clean-inactive-duration` specified time,
+# the shop is not deleted, but it's transitioned into a state where the contents (items / money) can be claimed by other players
+claimable-system: false
+# When player collects all items / money from this claimable system, should we give them the shop back?
+claimable-system-give_shop: false
+
 # When enabled, the blocks above shops will be cleared to avoid any display conflicts when shops are loaded in from the database.
 fix-above-blocks: true
 
@@ -326,6 +332,11 @@ admin-shop-format:
   - "&7Buy from shop for &e{buy-price}"
   - "&7Sell to shop for &e{sell-price}"
   - "&cAdmin Shop &7(Stock: &e{stock}&7)"
+
+claimable-format:
+  - "{item} &r &7x&a{stock}"
+  - ""
+  - "&7This shop is claimable - owner is inactive"
 
 # This is the hologram format that is used when a shop has a unlimited stock amount and has no owner,
 # but has no valid shop item.
